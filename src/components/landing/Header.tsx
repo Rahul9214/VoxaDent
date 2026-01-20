@@ -19,7 +19,7 @@ const Header = () => {
           {/* Text Block */}
           <div className="relative flex flex-col justify-center">
             {/* Brand Name */}
-            <div className="flex items-baseline gap-1 leading-none">
+            <div className="flex items-baseline leading-none">
               <span className="text-base hover:text-foreground font-semibold text-neutral-300">
                 Voxa
               </span>
