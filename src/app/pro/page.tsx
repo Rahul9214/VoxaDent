@@ -4,6 +4,13 @@ import { auth, currentUser } from "@clerk/nextjs/server";
 import { CrownIcon } from "lucide-react";
 import { redirect } from "next/navigation";
 
+/**
+ * Render the Pro upgrade page for authenticated users.
+ *
+ * Redirects unauthenticated users to the root path ("/").
+ *
+ * @returns A React element containing the navbar, promotional hero banner with crown icon, and the pricing section (pricing table and plan description).
+ */
 async function ProPage() {
   const user = await currentUser();
 
