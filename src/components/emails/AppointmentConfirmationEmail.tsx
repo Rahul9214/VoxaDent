@@ -36,7 +36,7 @@ function AppointmentConfirmationEmail({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src={`${process.env.NEXT_PUBLIC_APP_URL}/email/logosss.png`}
+              src={`${process.env.NEXT_PUBLIC_APP_URL}/logosss.png`}
               width="50"
               height="50"
               alt="VoxaDent"
