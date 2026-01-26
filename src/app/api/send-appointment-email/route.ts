@@ -1,9 +1,10 @@
 import AppointmentConfirmationEmail from "@/components/emails/AppointmentConfirmationEmail";
-import resend from "@/lib/resend";
+import { getResend } from "@/lib/resend";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
+    const resend = getResend();
     const body = await request.json();
 
     const {
