@@ -47,7 +47,9 @@ async function DentalHealthOverview() {
           </div>
           <div className="text-center p-4 bg-muted/30 rounded-xl">
             <div className="text-2xl font-bold text-primary mb-1">
-              {format(new Date(user?.createdAt!), "MMM yyyy")}
+              {user?.createdAt
+                ? format(new Date(user.createdAt), "MMM yyyy")
+                : "-"}
             </div>
             <div className="text-sm text-muted-foreground">Member Since</div>
           </div>

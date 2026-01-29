@@ -1,4 +1,5 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextResponse } from "next/server";
 
 const isProtectedRoute = createRouteMatcher([
   "/dashboard(.*)",
@@ -8,7 +9,15 @@ const isProtectedRoute = createRouteMatcher([
   "/api/(.*)",
 ]);
 
-export default clerkMiddleware((auth, req) => {
+export default clerkMiddleware(async (auth, req) => {
+  const session = await auth();           
+  const userId = session?.userId ?? null; 
+
+  // Redirect logged-in users away from landing page
+  if (req.nextUrl.pathname === "/" && userId) {
+    return NextResponse.redirect(new URL("/dashboard", req.url));
+  }
+
   if (isProtectedRoute(req)) {
     auth.protect();
   }
@@ -16,6 +25,7 @@ export default clerkMiddleware((auth, req) => {
 
 export const config = {
   matcher: [
+    "/",
     "/dashboard(.*)",
     "/appointments(.*)",
     "/voice(.*)",
@@ -23,3 +33,5 @@ export const config = {
     "/api/(.*)",
   ],
 };
+
+ 
