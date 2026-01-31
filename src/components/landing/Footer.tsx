@@ -25,16 +25,6 @@ const Footer = () => {
                   Dent
                 </span>
               </div>
-
-              {/* Tagline with dashes */}
-              {/* <div className="flex items-center gap-2 mt-0.5">
-                  <span className="h-px w-5 bg-amber-500/70" />
-                  <span className="text-[9px] font-semibold hover:text-foreground tracking-[0.32em] text-amber-600/80 whitespace-nowrap">
-                    AI DENTAL ASSISTANT
-                  </span>
-                  <span className="h-px w-5 bg-amber-500/70" />
-                </div> */}
-              {/* </div> */}
             </div>
 
             <p className="text-sm text-muted-foreground">

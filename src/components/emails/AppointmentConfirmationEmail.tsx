@@ -35,7 +35,7 @@ function AppointmentConfirmationEmail({
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
-            <Img
+            {/* <Img
               src={`${process.env.NEXT_PUBLIC_APP_URL}/logosss.png`}
               width="50"
               height="50"
@@ -45,7 +45,7 @@ function AppointmentConfirmationEmail({
                 margin: "0 auto 8px auto",
                 borderRadius: "8px",
               }}
-            />
+            /> */}
 
             {/* Brand Name */}
             <Text
@@ -158,20 +158,20 @@ const logoContainer = {
   marginBottom: "32px",
 };
 
-const logo = {
-  borderRadius: "8px",
-  display: "inline",
-  verticalAlign: "middle",
-};
+// const logo = {
+//   borderRadius: "8px",
+//   display: "inline",
+//   verticalAlign: "middle",
+// };
 
-const logoText = {
-  fontSize: "20px",
-  fontWeight: "bold",
-  color: "#2563eb",
-  margin: "0",
-  display: "inline",
-  marginLeft: "12px",
-};
+// const logoText = {
+//   fontSize: "20px",
+//   fontWeight: "bold",
+//   color: "#2563eb",
+//   margin: "0",
+//   display: "inline",
+//   marginLeft: "12px",
+// };
 
 const h1 = {
   color: "#1f2937",

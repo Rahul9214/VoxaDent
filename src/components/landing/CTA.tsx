@@ -1,4 +1,3 @@
-import React from "react";
 import { CalendarIcon, MicIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
@@ -75,7 +74,7 @@ const CTA = () => {
 
                 <Image
                   src="/cta.png"
-                  alt="DentWise AI Assistant"
+                  alt="VoxaDent AI Assistant"
                   width={300}
                   height={300}
                   className="relative w-80 h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500"
