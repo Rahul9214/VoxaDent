@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              AI-powered dental assistance that actually helps.
+              AI-powered Dental Assistance that actually helps.
             </p>
           </div>
 
