@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center -ml-3">
               <Image
                 src="/logosss.png"
                 alt="VoxaDent Logo"
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground -mt-2">
               AI-powered Dental Assistance that actually helps.
             </p>
           </div>
