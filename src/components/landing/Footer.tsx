@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-muted-foreground -mt-2">
-              AI-powered Dental Assistance that actually helps.
+              AI-Powered Dental Assistance that actually helps.
             </p>
           </div>
 
@@ -98,8 +98,7 @@ const Footer = () => {
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy;2026 VoxaDent. Built for real people with real dental
-            questions.
+            &copy;2026 VoxaDent. Trusted AI guidance for everyday dental care.
           </p>
         </div>
       </div>
