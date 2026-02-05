@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦷 VoxaDent — AI Dental Assistant
 
-## Getting Started
+VoxaDent is a **production-grade, AI-powered dental assistance platform** designed to simplify dental care access through intelligent booking, real-time AI voice interaction, and a scalable admin-driven workflow.
 
-First, run the development server:
+The platform combines **modern frontend engineering**, **secure authentication**, **AI integrations**, and **subscription-based monetization** into a cohesive, real-world system.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## 🧠 Problem Statement
+
+Dental consultations today suffer from:
+- Long booking friction
+- Poor appointment coordination
+- Limited real-time assistance
+- No AI-powered triage or voice support
+- Fragmented admin workflows
+
+**VoxaDent solves this** by providing:
+- A guided 3-step appointment booking flow
+- AI-powered voice-based dental assistance
+- Secure authentication & subscriptions
+- Centralized admin appointment management
+
+## ✨ Key Features
+
+### 🏠 User Experience
+- Modern landing page with gradients, illustrations, and responsive layout
+- Accessible UI with clear CTAs and smooth transitions
+- Mobile-first design philosophy
+
+### 🔐 Authentication & Security
+- Authentication via **Clerk**
+  - Google
+  - GitHub
+  - Email & Password
+- Mandatory email verification (6-digit OTP)
+- Session-based protected routes
+
+### 📅 Appointment Booking System
+- 3-step guided booking flow:
+  1. Select Dentist
+  2. Choose Service & Time Slot
+  3. Confirm Appointment
+- Real-time availability validation
+- Email confirmation on successful booking
+
+### 📩 Email Automation
+- Booking confirmation emails
+- Invoice delivery via email
+- Transactional emails powered by **Resend**
+
+### 🗣️ AI Voice Agent (Pro Plans)
+- AI voice assistant powered by **Vapi**
+- Real-time conversational dental guidance
+- Restricted to paid subscriptions via feature gating
+
+### 💳 Subscription & Payments
+- Subscription handling via **Clerk Billing**
+- Plans:
+  - Free
+  - Pro
+  - Premium
+- Smart upgrade logic:
+  - Users pay **only the price difference**
+- Auto-generated invoices emailed to users
+
+### 📊 Admin Dashboard
+- View & manage all appointments
+- Status updates (confirmed, cancelled, completed)
+- User-centric appointment filtering
+- Designed for operational scale
+
+### 🗄️ Data & State Management
+- PostgreSQL for persistence
+- Type-safe queries
+- Optimized data fetching using **TanStack Query**
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|------|-----------|
+| Frontend | Next.js (App Router), React |
+| Styling | Tailwind CSS, Shadcn/UI, tweakcn |
+| Auth & Billing | Clerk |
+| Database | PostgreSQL |
+| AI Voice | Vapi |
+| Email | Resend |
+| Data Fetching | TanStack Query |
+| Dev Workflow | GitHub, CodeRabbit |
+| Deployment | Vercel |
+
+## 🧱 Architecture Overview
+
+- Modular, feature-based folder structure
+- Clear separation of:
+  - UI components
+  - Business logic
+  - API interactions
+- Server Components for secure operations
+- Client Components only where interactivity is required
+
+## ⚙️ Environment Variables
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+DATABASE_URL=
+
+RESEND_API_KEY=
+
+NEXT_PUBLIC_VAPI_ASSISTANT_ID=
+NEXT_PUBLIC_VAPI_API_KEY=
+
 ```
+## 🔄 Git & Development Workflow
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Feature-based branching  
+- Pull Requests for every major change  
+- PR reviews optimized using CodeRabbit  
+- Clean commit history  
+- No direct pushes to `main`  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📈 Performance & Optimization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Server-side rendering where applicable  
+- Optimized API calls using query caching  
+- Reduced re-renders via component isolation  
+- Lazy loading for non-critical components  
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+- Hosted on Vercel  
+- Free-tier optimized  
+- Environment-based configurations  
+- CI-ready setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Live Demo
+🔗 https://voxa-dent.vercel.app/ 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧪 Future Enhancements
 
-## Deploy on Vercel
+- AI symptom analysis (image + text)  
+- Multi-clinic support  
+- Doctor availability sync  
+- Analytics dashboard for admins  
+- Mobile app (React Native)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
