@@ -146,8 +146,8 @@ const Hero = () => {
               <Image
                 src={"/heros_sec.png"}
                 alt="VoxaDent AI"
-                width={900}
-                height={900}
+                width={600}
+                height={600}
                 className="w-full h-auto -mt-10"
               />
             </div>
