@@ -148,7 +148,7 @@ const Hero = () => {
                 alt="VoxaDent AI"
                 width={600}
                 height={600}
-                className="w-full h-auto -mt-10"
+                className="w-full h-auto"
               />
             </div>
           </div>
