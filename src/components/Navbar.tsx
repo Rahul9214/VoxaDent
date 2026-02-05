@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* LOGO */}
         <div className="flex items-center gap-8">
-          <Link href="/dashboard" className="flex items-center gap-2">
+          <Link href="/dashboard" className="flex items-center">
             <Image
               src="/logosss.png"
               alt="VoxaDent Logo"
