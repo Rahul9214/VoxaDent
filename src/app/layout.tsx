@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VOXADENT - AI DENTAL ASSISTANT",
   description:
-    "VoxaDent is a Smart AI Voice Platform for Dental Clinics to manage appointments, patients, and subscriptions seamlessly.",
+    "VoxaDent is an AI-powered dental assistant that simplifies appointment booking, voice-based guidance, and clinic operations through a secure, modern platform.",
 };
 
 export default function RootLayout({
