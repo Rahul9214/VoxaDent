@@ -10,14 +10,6 @@ import WhatToAsk from "@/components/landing/WhatToAsk";
 // import { redirect } from "next/navigation";
 
 export default function Home() {
-  // const user = await currentUser();
-
-  // // the best way of syncing => webhooks
-  // await syncUser();
-
-  // // Redirect to dashboard if user is logged in
-  // if (user) redirect("/dashboard");
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
