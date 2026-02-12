@@ -41,7 +41,7 @@ function AppointmentsPage() {
 
   const handleBookAppointment = async () => {
     if (!selectedDentistId || !selectedDate || !selectedTime) {
-      toast.error("Please fill in all required fields");
+      toast.error("Please fill in all the required fields");
       return;
     }
 
