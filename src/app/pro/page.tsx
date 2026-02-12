@@ -9,14 +9,6 @@ async function ProPage() {
 
   if (!user) redirect("/");
 
-  // To Check if the user already has a pro plan or free plan
-
-  //   const { has } = await auth();
-
-  //   const hasProPlan = has({ plan: "ai_basic" }) || has({ plan: "ai_pro" });
-
-  //   console.log("hasProPlan:", hasProPlan);
-
   return (
     <>
       <Navbar />
