@@ -35,18 +35,6 @@ function AppointmentConfirmationEmail({
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
-            {/* <Img
-              src={`${process.env.NEXT_PUBLIC_APP_URL}/logosss.png`}
-              width="50"
-              height="50"
-              alt="VoxaDent"
-              style={{
-                display: "block",
-                margin: "0 auto 8px auto",
-                borderRadius: "8px",
-              }}
-            /> */}
-
             {/* Brand Name */}
             <Text
               style={{
