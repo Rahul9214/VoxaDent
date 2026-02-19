@@ -21,7 +21,7 @@ export function useCreateDoctor() {
       // invalidate related queries to refresh the data
       queryClient.invalidateQueries({ queryKey: ["getDoctors"] });
     },
-    onError: (error) => console.log("Error while  creating a doctor"),
+    onError: (error) => console.log("Error while creating a doctor"),
   });
 
   return result;
