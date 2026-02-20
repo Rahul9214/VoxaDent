@@ -1,5 +1,4 @@
-// In Next.js, this file would be called: app/providers.tsx
-"use client";
+"use client"; // In Next.js, this file would be called: app/providers.tsx
 
 // Since QueryClientProvider relies on useContext under the hood, we have to put 'use client' on top
 import {
