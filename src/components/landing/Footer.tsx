@@ -14,8 +14,6 @@ const Footer = () => {
                 height={32}
                 className="w-12 h-12"
               />
-              {/* Text Block */}
-              {/* <div className="relative flex flex-col justify-center"> */}
               {/* Brand Name */}
               <div className="flex items-baseline leading-none">
                 <span className="text-lg hover:text-foreground font-semibold text-neutral-300">
